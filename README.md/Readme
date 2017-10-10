@@ -1,0 +1,42 @@
+Pseudocodigo
+     ---------------
+
+1.-  Se crea una variable llamada creditCard cuyo valor sera el numero de la tarjeta de credito que el usuario ingrese mediante un prompt.
+var creditCard = prompt("Ingrese el numero de su tarjeta");
+creditCard!== "" && creditCard !== " "
+2.-  Se valida los datos
+si es verdad  : isValidCard(creditCard)
+sino aparece un alert("Ingrese un numero valido, por favor.");
+3.-  Continua si cumple creditCard === "" || creditCard=== " "
+Mientras el campo esta vacio el prompt le vuelve a pedir al usuario que ingrese un numero de tarjeta de credito.
+
+4.- isValidCard(numbersCard) , esta funcion verificara si los numeros de la tarjeta de credito son validos al Algoritmo de Luhn.
+5.- var arr = [];    creamos un array
+6.- var size = numbersCard.length;   nos da el tamano en numero de caracteres.
+7.- var lastPosition = size - 1;     nos da la ultima posicion.
+8.- var sumtotal = 0;
+
+9.- si : i>=0  for(var i = lastPosition ; i >= 0 ; i--)
+arr.push(parseInt(numbersCard[i])); guarda el  numero impar.
+
+10.- Si : var j=1 y j <= arr.length, continua
+(j % 2) === 0 si es verdad continua si es falso te envia a j++:
+var number = arr[j-1] * 2;    guarda el  numero par, continua
+number >= 10 , en caso que multiplicacion sea mayor igual a 10.
+si es verdad entonces number = number.toString();
+continua con: var digitOne = parseInt(number[0]);  0 y 1 porque es imposible.
+luego segundo digito : var digitTwo = parseInt(number[1]);  number sera un numero.
+continua con: arr[j-1] = digitOne + digitTwo;  de mas digitos terminando en j++.
+Si number >= 10 es  falso nos da arr[j-1] = number terminando en j++ regresando a j<=arr.length donde j sea  menor que la longitud del array "arr",
+11.-  Si j<=arr.length es false creamos una nueva variable  llamada  "k" var k = 0 ; k < arr.length si es verdad
+sumtotal = sumtotal + arr[k] ;  Sumatoria de todos los numeros de la tarjeta.
+
+Si es falso sumtotal % 10 === 0
+Si es  verdad me devuelve un alert("El numero de su tarjeta es valido");
+Si es falso sumtotal % 10 !== 0
+si es falso me devuelve un alert("Lo sentimos, el numero de su tarjeta no es valido");
+
+12.- isValidCard(); Finalente llamos a la funcion.
+
+https://subefotos.com/ver/?0f3b40ab08ed65a4e905ec13cb78d563o.jpg#codigos
+https://subefotos.com/ver/?9041630d242f22738dd3c33571c2147do.jpg#codigos
