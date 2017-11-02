@@ -2,14 +2,22 @@ body {
     font-family: Georgia, "Times New Roman",
     Times, serif;
     color: purple;
-    background-color: #d8da3d 
+    background-color: #d8da3d;
+    padding:50px ;
 }
     
 h1 {
     font-family: Helvetica, Geneva, Arial,
-    SunSans-Regular, sans-serif 
+    SunSans-Regular, sans-serif;
+    margin-left: 270px;
+    padding: 30px;
 }
 
-p{
-    font-size: 
+p,h2,h3{
+    font-size:20px;
+    text-align: justify;
+}
+img{
+    margin-left: 400px;
+    padding: 40px;
 }
