@@ -1,5 +1,4 @@
-Pseudocodigo
-     ---------------
+#Pseudocodigo
 
 1.-  Se crea una variable llamada creditCard cuyo valor sera el numero de la tarjeta de credito que el usuario ingrese mediante un prompt.
 var creditCard = prompt("Ingrese el numero de su tarjeta");
@@ -38,5 +37,6 @@ si es falso me devuelve un alert("Lo sentimos, el numero de su tarjeta no es val
 
 12.- isValidCard(); Finalente llamos a la funcion.
 
-https://subefotos.com/ver/?0f3b40ab08ed65a4e905ec13cb78d563o.jpg#codigos
-https://subefotos.com/ver/?9041630d242f22738dd3c33571c2147do.jpg#codigos
+#Flujo
+![](assets/one.png)
+![](assets/two.png)
